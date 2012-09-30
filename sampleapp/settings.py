@@ -1,5 +1,6 @@
 # Django settings for sampleapp project.
 import os
+import dj_database_url
 APP_PATH = os.path.dirname(os.path.abspath(__file__))
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -127,6 +128,8 @@ INSTALLED_APPS = (
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
+	'allauth.socialaccount.providers.twitter',
+    'allauth.socialaccount.providers.openid',
     'django.contrib.admin',
     'django.contrib.admindocs',
     #'emailconfirmation',
